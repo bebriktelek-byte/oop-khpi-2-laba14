@@ -1,0 +1,19 @@
+public class Document {
+    private final String id;
+    private final String title;
+    private final String content;
+    private boolean isVerified;
+
+    public Document(String id, String title, String content) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.isVerified = false;
+    }
+
+    public String getId() { return id; }
+    public String getTitle() { return title; }
+    public String getContent() { return content; }
+    public boolean isVerified() { return isVerified; }
+    public void setVerified(boolean verified) { this.isVerified = verified; }
+}
